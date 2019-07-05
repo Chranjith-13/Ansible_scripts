@@ -1,0 +1,12 @@
+---
+- hosts: jenkins  
+  gather_facts: true
+  become: true
+  vars:  
+    region: ap-southeast-1
+  tasks: 
+    - name: start instance
+      module: gce 
+       region: "{{ region }}"
+       state: running
+       wait: yes

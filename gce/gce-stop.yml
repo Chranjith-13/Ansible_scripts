@@ -1,0 +1,10 @@
+---
+- hosts: jenkins  
+  gather_facts: true
+  become: true
+  tasks: 
+    - name: stop instance
+      module: gce 
+       #region: asia-south1
+       state: stopped
+       wait: yes

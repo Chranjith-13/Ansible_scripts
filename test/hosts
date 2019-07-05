@@ -1,0 +1,1 @@
+web ansible_ssh_host=10.160.0.2  ansible_ssh_user=devuser ansible_ssh_pass=support
